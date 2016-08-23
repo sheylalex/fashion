@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>jade</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <section class="lenguajes">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="color-plomo pd-2 mgt-1">Default Welcome Msg!</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="nav nav-tabs pull-right">
+              <li class="dropdown">
+                <button id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-default dropdown-toggle">Language<span class="caret"></span><img src="images/flag1.png" alt="imagen" class="pull-left"></button>
+                <ul aria-labelledby="dropdownMenu2" class="dropdown-menu">
+                  <li><a href="#"><img src="images/flag1.png" alt="imagen" class="pull-left">
+                      <p class="text-center">Ingles</p></a></li>
+                  <li><a href="#"><img src="images/flag2.png" alt="imagen" class="pull-left">
+                      <p class="text-center">Frances</p></a></li>
+                  <li><a href="#"> <img src="images/flag3.jpg" alt="imagen" class="pull-left">
+                      <p class="text-center">Español</p></a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <button id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-default dropdown-toggle">Currency<span class="caret"></span><i class="glyphicon glyphicon-usd pull-left"></i></button>
+                <ul aria-labelledby="dropdownMenu2" class="dropdown-menu">
+                  <li><a href="#">
+                      <p class="text-center">$ Dolares</p></a></li>
+                  <li><a href="#">
+                      <p class="text-center">S/ Soles</p></a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <button id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-default dropdown-toggle">My Account<span class="caret"></span><i aria-hidden="true" class="fa fa-user pull-left"></i></button>
+                <ul aria-labelledby="dropdownMenu2" class="dropdown-menu">
+                  <li><a href="#">
+                      <p class="text-center">Iniciar sesión</p></a></li>
+                  <li><a href="#">
+                      <p class="text-center">Registrarse</p></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="logo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="media">
+              <div class="media-left"><i class="glyphicon glyphicon-time"></i></div>
+              <div class="media-body">
+                <h4 class="media-heading">OPENING TIME</h4><small>9.00 AM - 10.00 PM</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 text-center"><img src="images/logo.png" alt="imagen"></div>
+          <div class="col-md-3">
+            <div class="input-group">
+              <input type="text" placeholder="Search for..." class="form-control"><span class="input-group-btn">
+                <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div role="group" aria-label="..." class="btn-group">
+              <button type="button" class="btn btn-default"> <b>HOME</b></button>
+              <button type="button" class="btn btn-default"> <b>CONTACT US</b></button>
+            </div>
+          </div>
+          <div class="col-md-8 carrito">
+            <div class="dropdown pull-right">
+              <button id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn dropdown-toggle"><i class="glyphicon glyphicon-shopping-cart text-white"> My Cart	</i>
+                <p class="text-white">2 Item(s) - $244.00</p>
+              </button>
+              <ul aria-labelledby="dropdownMenu2" class="dropdown-menu">
+                <li class="media">
+                  <div class="media-left"><img src="images/cart-1.jpg" alt="imagen"></div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Aliquam Consequat</h4>
+                    <p>1 x $500 	</p>
+                  </div>
+                </li>
+                <li class="media">
+                  <div class="media-left"><img src="images/cart-2.jpg" alt="imagen"></div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Quisque In Arcuc</h4>
+                    <p>1 x $200</p>
+                  </div>
+                </li>
+                <table class="table">
+                  <thead>
+                    <th>Sub-Total</th>
+                    <th class="rojo">$700</th>
+                  </thead>
+                  <thead>
+                    <th>Eco Tax (-2.00)</th>
+                    <th class="rojo">$7.00</th>
+                  </thead>
+                  <thead>
+                    <th>VAT(20%)</th>
+                    <th class="rojo">$40.00</th>
+                  </thead>
+                </table>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="imagen-principal text-center">
+      <input id="element1" type="radio" name="slider-select-element" checked="checked">
+      <input id="element2" type="radio" name="slider-select-element">
+      <input id="element3" type="radio" name="slider-select-element">
+      <div id="slider-container">
+        <div class="container">
+          <div class="texto-grande">
+            <h1 class="text-white text-center">AUTUMN/WINTER LOOKBOOK</h1>
+            <p class="text-white text-center">- 2016 COLLECTION -</p>
+          </div>
+        </div>
+        <div id="slider-box">
+          <div class="slider-element">
+            <article class="element-1"></article>
+          </div>
+          <div class="slider-element">
+            <article class="element-2"></article>
+          </div>
+          <div class="slider-element">
+            <article class="element-3"></article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row pt-3">
+          <div class="col-md-5"><img src="images/banner1.jpg" alt="imagen" class="w-100"></div>
+          <div class="col-md-7"><img src="images/banner2.jpg" alt="imagen" class="w-100"></div>
+        </div>
+        <div class="row pt-3 foto">
+          <div class="col-md-4">
+            <hr>
+          </div>
+          <div class="col-md-4"><i class="glyphicon glyphicon-menu-left pull-left pt-3"></i><i class="glyphicon glyphicon-menu-right pull-right pt-3"></i>
+            <ul class="list-inline mg-0 pt-3 text-center">
+              <li> <a>LATEST</a></li>
+              <li> <a>BESTSELLER</a></li>
+              <li> <a>SALE</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <hr>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="estrellas">
+      <div class="container">				
+        <div class="row text-center pt-3">
+          <div class="col-md-3">
+            <div class="thumbnail"><img src="images/a1.jpg" alt="imagen" class="img-responsive w-100">
+              <div class="caption">
+                <h4>Deliver Wide</h4><span><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></span>
+                <p>$218</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="thumbnail"><img src="images/b1.jpg" alt="imagen" class="img-responsive w-100">
+              <div class="caption">
+                <h4>Deliver Wide</h4><span><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></span>
+                <p>$218</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="thumbnail"><img src="images/c1.jpg" alt="imagen" class="img-responsive w-100">
+              <div class="caption">
+                <h4>Deliver Wide</h4><span><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></span>
+                <p>$218</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="thumbnail"><img src="images/d1.jpg" alt="imagen" class="img-responsive w-100">
+              <div class="caption">
+                <h4>Deliver Wide</h4><span><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></span>
+                <p>$218</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="auspiciadores">
+      <div class="container">
+        <div class="row pt-5 pb-5">
+          <div class="col-md-2"><a href="#" class="thumbnail"><img src="images/client1.jpg" alt="imagen" class="img-responsive"></a></div>
+          <div class="col-md-2"><a href="#" class="thumbnail"><img src="images/client2.jpg" alt="imagen" class="img-responsive"></a></div>
+          <div class="col-md-2"><a href="#" class="thumbnail"><img src="images/client3.jpg" alt="imagen" class="img-responsive"></a></div>
+          <div class="col-md-2"><a href="#" class="thumbnail"><img src="images/client4.jpg" alt="imagen"></a></div>
+          <div class="col-md-2"><a href="#" class="thumbnail"><img src="images/client5.jpg" alt="imagen" class="img-responsive"></a></div>
+          <div class="col-md-2"><a href="#" class="thumbnail"><img src="images/client6.jpg" alt="imagen" class="img-responsive"></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="productos">
+      <div class="container">
+        <div class="row pt-3 foto">
+          <div class="col-md-4">
+            <hr>
+          </div>
+          <div class="col-md-4"><i class="glyphicon glyphicon-menu-left pull-left pt-3"></i><i class="glyphicon glyphicon-menu-right pull-right pt-3"></i>
+            <ul class="list-inline mg-0 pt-3 text-center">
+              <li> <a>CLOTHING</a></li>
+              <li> <a>EQUIPMENTS</a></li>
+              <li> <a>JEWELLERY</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <hr>
+          </div>
+        </div>
+        <div class="row pt-3 pb-3">
+          <div class="col-md-4">
+            <div class="media">
+              <div class="media-left"><img src="images/a2.jpg" alt="imagen"></div>
+              <div class="media-body">
+                <h4 class="media-heading">Deliver Wide</h4>
+                <strike>$242.00</strike>
+                <p>$218.00</p>
+                <button id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn dropdown-toggle"><i class="glyphicon glyphicon-shopping-cart text-white"> <small>Add to Cart</small></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 media">
+            <div class="media-left"><a href="#"><img src="images/d2.jpg" alt="imagen"></a></div>
+            <div class="media-body">
+              <h4 class="media-heading">Deliver Wide</h4>
+              <p>$218.00</p><a href="#" role="button" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+          <div class="col-md-4 media">
+            <div class="media-left"><a href="#"><img src="images/c2.jpg" alt="imagen"></a></div>
+            <div class="media-body">
+              <h4 class="media-heading">Deliver Wide</h4>
+              <p>$218.00</p><a href="#" role="button" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-3 pb-3">
+          <div class="col-md-4 media">
+            <div class="media-left"><a href="#"><img src="images/c2.jpg" alt="imagen"></a></div>
+            <div class="media-body">
+              <h4 class="media-heading">Deliver Wide</h4>
+              <p>$218.00</p><a href="#" role="button" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+          <div class="col-md-4 media">
+            <div class="media-left"><a href="#"><img src="images/c2.jpg" alt="imagen"></a></div>
+            <div class="media-body">
+              <h4 class="media-heading">Deliver Wide</h4>
+              <strike>$242.00</strike>
+              <p>$218.00</p><a href="#" role="button" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+          <div class="col-md-4 media">
+            <div class="media-left"><a href="#"><img src="images/e2.jpg" alt="imagen"></a></div>
+            <div class="media-body">
+              <h4 class="media-heading">Deliver Wide</h4>
+              <p>$218.00</p><a href="#" role="button" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row pt-3 foto pt-3 pb-3">
+          <div class="col-md-4">
+            <hr>
+          </div>
+          <div class="col-md-4"><i class="glyphicon glyphicon-menu-left pull-left pt-3"></i><i class="glyphicon glyphicon-menu-right pull-right pt-3"></i>
+            <ul class="list-inline mg-0 pt-3 text-center">
+              <li> <a>BLOG</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <hr>
+          </div>
+        </div>
+        <div class="row pt-3 pb-3">		
+          <div class="col-md-3">
+            <div class="thumbnail"><img src="images/blog1.jpg" alt="imagen">
+              <div class="caption">
+                <h3>THE SAMPLE HEADING TITLE</h3>
+                <p>27/11/2015</p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium temporibus quaerat possimus eos at, ad sapiente fugiat? Voluptate, sint aut, hic itaque vero, dolor ipsum autem quis placeat possimus provident...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="thumbnail"><img src="images/blog2.jpg" alt="imagen">
+              <div class="caption">
+                <h3>THE SAMPLE HEADING TITLE</h3>
+                <p>27/11/2015</p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium temporibus quaerat possimus eos at, ad sapiente fugiat? Voluptate, sint aut, hic itaque vero, dolor ipsum autem quis placeat possimus provident.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="thumbnail"><img src="images/blog1.jpg" alt="imagen">
+              <div class="caption">
+                <h3>THE SAMPLE HEADING TITLE</h3>
+                <p>27/11/2015</p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium temporibus quaerat possimus eos at, ad sapiente fugiat? Voluptate, sint aut, hic itaque vero, dolor ipsum autem quis placeat possimus provident.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="thumbnail"><img src="images/blog3.jpg" alt="imagen">
+              <div class="caption">
+                <h3>THE SAMPLE HEADING TITLE</h3>
+                <p>27/11/2015</p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium temporibus quaerat possimus eos at, ad sapiente fugiat? Voluptate, sint aut, hic itaque vero, dolor ipsum autem quis placeat possimus provident.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-3 pb-3">
+          <div class="col-md-4">
+            <div class="media">
+              <div class="media-left"><i class="glyphicon glyphicon-earphone"></i></div>
+              <div class="media-body">
+                <h4 class="media-heading">ORDER ONLINE NOW</h4><small>Call US (0123)456789</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="media">
+              <div class="media-left"><i class="glyphicon glyphicon-plane"></i></div>
+              <div class="media-body">
+                <h4 class="media-heading">FREE WORLDWIDE SHIPPING</h4><small>On Order Over $100</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="media">
+              <div class="media-left"><i aria-hidden="true" class="fa fa-money"></i></div>
+              <div class="media-body">
+                <h4 class="media-heading">30 DAYS MONEY BACK 100%</h4><small>Satisfaction Guarantee</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="uno">
+      <div class="container uno">
+        <div class="row pt-3 pb-3">
+          <div class="col-md-3">
+            <h4>ACCESSORIES</h4><br><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, deleniti facere, aspernatur placeat, voluptate similique ullam nulla tempora, minima maxime delectus vitae id et quaerat sequi esse alias nostrum non.</small>
+          </div>
+          <div class="col-md-2">
+            <h4>MY ACCOUNT</h4><br>
+            <ul>
+              <li><small>MyAccount</small></li>
+              <li><small>Oder History</small></li>
+              <li> <small>Wish List</small></li>
+              <li> <small>Newsletter</small></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4>Information</h4><br>
+            <ul>
+              <li><small>About US</small></li>
+              <li><small>Delivery Information</small></li>
+              <li> <small>Privacy Policy</small></li>
+              <li> <small>Terms & conditions</small></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4>Extras</h4><br>
+            <ul>
+              <li><small>Brands</small></li>
+              <li><small>Gift Vouchers</small></li>
+              <li> <small>Affiliates</small></li>
+              <li> <small>Specials</small></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>ABOUT US</h4><br>
+            <div class="media">
+              <div class="media-left"><i class="glyphicon glyphicon-map-marker"></i></div>
+              <div class="media-body"><small class="media-heading">8901 Marmora Road. Glasgow D0489 Gr.New York</small></div>
+            </div>
+            <div class="media">
+              <div class="media-left"><i class="glyphicon glyphicon-earphone"></i></div>
+              <div class="media-body"><small class="media-heading">(0123)456789 (0987)654321</small></div>
+            </div>
+            <div class="media">
+              <div class="media-left"><i class="glyphicon glyphicon-envelope"></i></div>
+              <div class="media-body"><small class="media-heading">admin@bootexperts.com</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="dos">
+      <div class="container">
+        <div class="row pt-1 pb-1"><small class="pull-left text-white">Copyright 2015 BootExperts All rights reserved</small><img src="images/payment.png" alt="imagen" class="pull-right"></div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/scritp.js"></script>
+</html>

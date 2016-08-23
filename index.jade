@@ -1,0 +1,440 @@
+doctype html
+html(lang="en")
+	head
+		title jade
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", href="css/main.css")
+		link(rel="stylesheet" href="css/utilities.css")
+		link(href='https://fonts.googleapis.com/css?family=Kaushan+Script', rel='stylesheet', type='text/css')
+		link(href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css', rel='stylesheet')
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+
+	
+		script(src="js/jquery-1.12.3.min.js")
+		script(src="js/bootstrap.min.js")
+	body
+		section.lenguajes
+			.container
+				.row
+					.col-md-6
+						p.color-plomo.pd-2.mgt-1 Default Welcome Msg!
+					.col-md-6
+						ul.nav.nav-tabs.pull-right
+							li.dropdown
+								button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true') Language
+									span.caret
+									img.pull-left(src='../images/flag1.png', alt='imagen')
+								ul.dropdown-menu(aria-labelledby='dropdownMenu2')
+									li
+										a(href='#')
+											img.pull-left(src='../images/flag1.png', alt='imagen') 
+											p.text-center Ingles
+									li
+										a(href='#')
+											img.pull-left(src='../images/flag2.png', alt='imagen') 
+											p.text-center Frances
+									li
+										a(href='#') 
+											img.pull-left(src='../images/flag3.jpg', alt='imagen') 
+											p.text-center Español
+							li.dropdown
+								button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true') Currency
+									span.caret
+									i.glyphicon.glyphicon-usd.pull-left
+								ul.dropdown-menu(aria-labelledby='dropdownMenu2')
+									li
+										a(href='#')
+											p.text-center $ Dolares
+									li
+										a(href='#')
+											p.text-center S/ Soles
+							li.dropdown
+								button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true') My Account
+									span.caret
+									i.fa.fa-user.pull-left(aria-hidden='true')
+								ul.dropdown-menu(aria-labelledby='dropdownMenu2')
+									li
+										a(href='#')
+											p.text-center Iniciar secion
+									li
+										a(href='#')
+											p.text-center Registrars	
+		section.logo
+			.container
+				.row
+					.col-md-3
+						.media
+							.media-left
+								i.glyphicon.glyphicon-time
+							.media-body
+								h4.media-heading OPENING TIME
+								small 9.00 AM - 10.00 PM
+					.col-md-6.text-center
+						img(src='../images/logo.png', alt='imagen')
+					.col-md-3
+						.input-group
+							input.form-control(type='text', placeholder='Search for...')
+							span.input-group-btn
+								button.btn.btn-default(type='button')
+									i.glyphicon.glyphicon-search
+		section.menu
+			.container
+				.row
+					.col-md-4
+						.btn-group(role='group', aria-label='...')
+							button.btn.btn-default(type='button') 
+								b HOME
+							button.btn.btn-default(type='button') 
+								b CONTACT US
+					.col-md-8.carrito
+						.dropdown.pull-right
+								button#dropdownMenu1.btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+									i.glyphicon.glyphicon-shopping-cart.text-white  My Cart	
+									p.text-white 2 Item(s) - $244.00
+								ul.dropdown-menu(aria-labelledby='dropdownMenu2')
+									li.media
+										.media-left
+											img(src='../images/cart-1.jpg', alt='imagen')
+										.media-body
+											h4.media-heading Aliquam Consequat
+											p 1 x $500 	
+									li.media
+										.media-left
+											img(src='../images/cart-2.jpg', alt='imagen')
+										.media-body
+											h4.media-heading Quisque In Arcuc
+											p 1 x $200
+									table.table
+										thead
+											th Sub-Total
+											th.rojo $700
+										thead
+											th Eco Tax (-2.00)
+											th.rojo $7.00
+										thead
+											th VAT(20%)
+											th.rojo $40.00
+
+		section.imagen-principal.text-center
+			input#element1(type='radio', name='slider-select-element', checked='checked')
+			input#element2(type='radio', name='slider-select-element')
+			input#element3(type='radio', name='slider-select-element')
+			#slider-container
+				.container
+					.texto-grande
+						h1.text-white.text-center AUTUMN/WINTER LOOKBOOK
+						p.text-white.text-center - 2016 COLLECTION -
+				#slider-box
+					.slider-element
+						article.element-1
+					.slider-element
+						article.element-2
+					.slider-element
+						article.element-3
+
+		section
+			.container
+				.row.pt-3
+					.col-md-5
+						img.w-100(src='../images/banner1.jpg', alt='imagen')
+					.col-md-7
+						img.w-100(src='../images/banner2.jpg', alt='imagen')
+				.row.pt-3.foto
+					.col-md-4
+						hr
+					.col-md-4
+						i.glyphicon.glyphicon-menu-left.pull-left.pt-3
+						i.glyphicon.glyphicon-menu-right.pull-right.pt-3
+						ul.list-inline.mg-0.pt-3.text-center
+							li 
+								a LATEST
+							li 
+								a BESTSELLER
+							li 
+								a SALE
+					.col-md-4
+						hr
+		section.estrellas
+			.container				
+				.row.text-center.pt-3
+					.col-md-3
+						.thumbnail
+							img.img-responsive.w-100(src='../images/a1.jpg', alt='imagen')
+							.caption
+								h4 Deliver Wide
+								span
+									i.glyphicon.glyphicon-star
+									i.glyphicon.glyphicon-star
+									i.glyphicon.glyphicon-star
+									i.glyphicon.glyphicon-star-empty
+									i.glyphicon.glyphicon-star-empty
+								p $218
+					.col-md-3
+						.thumbnail
+							img.img-responsive.w-100(src='../images/b1.jpg', alt='imagen')
+							.caption
+								h4 Deliver Wide
+								span
+									i.glyphicon.glyphicon-star
+									i.glyphicon.glyphicon-star
+									i.glyphicon.glyphicon-star
+									i.glyphicon.glyphicon-star-empty
+									i.glyphicon.glyphicon-star-empty
+								p $218
+					.col-md-3
+						.thumbnail
+							img.img-responsive.w-100(src='../images/c1.jpg', alt='imagen')
+							.caption
+								h4 Deliver Wide
+								span
+									i.glyphicon.glyphicon-star
+									i.glyphicon.glyphicon-star
+									i.glyphicon.glyphicon-star
+									i.glyphicon.glyphicon-star-empty
+									i.glyphicon.glyphicon-star-empty
+								p $218
+					.col-md-3
+						.thumbnail
+							img.img-responsive.w-100(src='../images/d1.jpg', alt='imagen')
+							.caption
+								h4 Deliver Wide
+								span
+									i.glyphicon.glyphicon-star
+									i.glyphicon.glyphicon-star
+									i.glyphicon.glyphicon-star
+									i.glyphicon.glyphicon-star-empty
+									i.glyphicon.glyphicon-star-empty
+								p $218
+		section.auspiciadores
+			.container
+				.row.pt-5.pb-5
+					.col-md-2
+						a.thumbnail(href='#')
+							img.img-responsive(src='../images/client1.jpg', alt='imagen')
+					.col-md-2
+						a.thumbnail(href='#')
+							img.img-responsive(src='../images/client2.jpg', alt='imagen')
+					.col-md-2
+						a.thumbnail(href='#')
+							img.img-responsive(src='../images/client3.jpg', alt='imagen')
+					.col-md-2
+						a.thumbnail(href='#')
+							img(src='../images/client4.jpg', alt='imagen')
+					.col-md-2
+						a.thumbnail(href='#')
+							img.img-responsive(src='../images/client5.jpg', alt='imagen')
+					.col-md-2
+						a.thumbnail(href='#')
+							img.img-responsive(src='../images/client6.jpg', alt='imagen')
+		section.productos
+			.container
+				.row.pt-3.foto
+					.col-md-4
+						hr
+					.col-md-4
+						i.glyphicon.glyphicon-menu-left.pull-left.pt-3
+						i.glyphicon.glyphicon-menu-right.pull-right.pt-3
+						ul.list-inline.mg-0.pt-3.text-center
+							li 
+								a CLOTHING
+							li 
+								a EQUIPMENTS
+							li 
+								a JEWELLERY
+					.col-md-4
+						hr
+				.row.pt-3.pb-3
+					.col-md-4
+						.media
+							.media-left
+								img(src='../images/a2.jpg', alt='imagen')
+							.media-body
+								h4.media-heading Deliver Wide
+								strike $242.00
+								p $218.00
+								button#dropdownMenu1.btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+									i.glyphicon.glyphicon-shopping-cart.text-white 
+										small Add to Cart
+					.col-md-4.media
+						.media-left
+							a(href='#')
+								img(src='../images/d2.jpg', alt='imagen')
+						.media-body
+							h4.media-heading Deliver Wide
+							p $218.00
+							a.btn.btn-primary(href='#', role='button') Button
+					.col-md-4.media
+						.media-left
+							a(href='#')
+								img(src='../images/c2.jpg', alt='imagen')
+						.media-body
+							h4.media-heading Deliver Wide
+							p $218.00
+							a.btn.btn-primary(href='#', role='button') Button
+				.row.pt-3.pb-3
+					.col-md-4.media
+						.media-left
+							a(href='#')
+								img(src='../images/c2.jpg', alt='imagen')
+						.media-body
+							h4.media-heading Deliver Wide
+							p $218.00
+							a.btn.btn-primary(href='#', role='button') Button
+					.col-md-4.media
+						.media-left
+							a(href='#')
+								img(src='../images/c2.jpg', alt='imagen')
+						.media-body
+							h4.media-heading Deliver Wide
+							strike $242.00
+							p $218.00
+							a.btn.btn-primary(href='#', role='button') Button
+					.col-md-4.media
+						.media-left
+							a(href='#')
+								img(src='../images/e2.jpg', alt='imagen')
+						.media-body
+							h4.media-heading Deliver Wide
+							p $218.00
+							a.btn.btn-primary(href='#', role='button') Button
+		section
+			.container
+				.row.pt-3.foto.pt-3.pb-3
+					.col-md-4
+						hr
+					.col-md-4
+						i.glyphicon.glyphicon-menu-left.pull-left.pt-3
+						i.glyphicon.glyphicon-menu-right.pull-right.pt-3
+						ul.list-inline.mg-0.pt-3.text-center
+							li 
+								a BLOG
+					.col-md-4
+						hr
+				.row.pt-3.pb-3		
+					.col-md-3
+						.thumbnail
+							img(src='../images/blog1.jpg', alt='imagen')
+							.caption
+								h3 THE SAMPLE HEADING TITLE
+								p 27/11/2015
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium temporibus quaerat possimus eos at, ad sapiente fugiat? Voluptate, sint aut, hic itaque vero, dolor ipsum autem quis placeat possimus provident...
+					.col-md-3
+						.thumbnail
+							img(src='../images/blog2.jpg', alt='imagen')
+							.caption
+								h3 THE SAMPLE HEADING TITLE
+								p 27/11/2015
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium temporibus quaerat possimus eos at, ad sapiente fugiat? Voluptate, sint aut, hic itaque vero, dolor ipsum autem quis placeat possimus provident.
+					.col-md-3
+						.thumbnail
+							img(src='../images/blog1.jpg', alt='imagen')
+							.caption
+								h3 THE SAMPLE HEADING TITLE
+								p 27/11/2015
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium temporibus quaerat possimus eos at, ad sapiente fugiat? Voluptate, sint aut, hic itaque vero, dolor ipsum autem quis placeat possimus provident.
+					.col-md-3
+						.thumbnail
+							img(src='../images/blog3.jpg', alt='imagen')
+							.caption
+								h3 THE SAMPLE HEADING TITLE
+								p 27/11/2015
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium temporibus quaerat possimus eos at, ad sapiente fugiat? Voluptate, sint aut, hic itaque vero, dolor ipsum autem quis placeat possimus provident.
+				.row.pt-3.pb-3
+					.col-md-4
+						.media
+							.media-left
+								i.glyphicon.glyphicon-earphone
+							.media-body
+								h4.media-heading ORDER ONLINE NOW
+								small Call US (0123)456789
+					.col-md-4
+						.media
+							.media-left
+								i.glyphicon.glyphicon-plane
+							.media-body
+								h4.media-heading FREE WORLDWIDE SHIPPING
+								small On Order Over $100
+					.col-md-4
+						.media
+							.media-left
+								i.fa.fa-money(aria-hidden='true')
+							.media-body
+								h4.media-heading 30 DAYS MONEY BACK 100%
+								small Satisfaction Guarantee
+		footer.uno
+			.container.uno
+				.row.pt-3.pb-3
+					.col-md-3
+						h4 ACCESSORIES
+						br
+						small Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, deleniti facere, aspernatur placeat, voluptate similique ullam nulla tempora, minima maxime delectus vitae id et quaerat sequi esse alias nostrum non.
+
+					.col-md-2
+						h4 MY ACCOUNT
+						br
+						ul
+							li
+								small MyAccount
+							li
+								small Oder History
+							li 
+								small Wish List
+							li 
+								small Newsletter
+					.col-md-2
+						h4 Information
+						br
+						ul
+							li
+								small About US
+							li
+								small Delivery Information
+							li 
+								small Privacy Policy
+							li 
+								small Terms & conditions
+					.col-md-2
+						h4 Extras
+						br
+						ul
+							li
+								small Brands
+							li
+								small Gift Vouchers
+							li 
+								small Affiliates
+							li 
+								small Specials
+					.col-md-3
+						h4 ABOUT US
+						br
+						.media
+							.media-left
+								i.glyphicon.glyphicon-map-marker
+							.media-body
+								small.media-heading 8901 Marmora Road. Glasgow D0489 Gr.New York
+						.media
+							.media-left
+								i.glyphicon.glyphicon-earphone
+							.media-body
+								small.media-heading (0123)456789 (0987)654321
+						.media
+							.media-left
+								i.glyphicon.glyphicon-envelope
+							.media-body
+								small.media-heading admin@bootexperts.com
+		footer.dos
+			.container
+				.row.pt-1.pb-1
+					small.pull-left.text-white Copyright 2015 BootExperts All rights reserved
+					img.pull-right(src='../images/payment.png', alt='imagen')
+
+					
+					
+
+								
+								
+
+	script(src='js/jquery-1.11.3.min.js')
+	script(type='text/javascript', src='js/scritp.js')

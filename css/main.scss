@@ -1,0 +1,95 @@
+// *{outline: 1px solid red;}
+$plomo:#D8D8D8;
+$negro:#000000;
+
+
+// lenguajes
+.lenguajes{
+	background-color:$plomo;
+	button{background-color:$plomo;
+	img{padding-right:10px;padding-top:5px;}}
+}
+// seccion logo
+.logo{
+	.media{padding-top:15%;}
+	.media-left i{font-size:50px;}
+	img{width:350px;height:auto;}
+	.input-group{padding-top:15%;}
+}
+// seccion menu
+.menu{
+	background-color:$plomo;
+	button{width:140px;height:75px;background-color:$plomo;}
+	b{color:black;text-align:center;font-size:16px;}
+	button:hover{background-color:red;}
+	b:hover{color:white;}
+	.carrito{button{background-color:#000000;width:200px;height:75px;
+		i{font-size:25px;}}}
+	.media{width:350px;height:auto;}
+	table{margin-bottom:0px;}
+}
+/* Slider imagen principal */
+.texto-grande{width:700px;height:auto; position:absolute;top:35%;left:25%;background-color: rgba(21, 8, 0, 0.2);
+	h1{font-size:40px;padding:3%;}}
+.imagen-principal{position: relative;}
+input[name="slider-select-element"] /*circulitos*/{
+	    display:circle;
+		position: absolute;} 
+#slider-container /*contenedor total*/{
+	    height: 500px;
+	    margin: 0 auto;
+	    overflow: hidden;
+	    text-align: left;
+	    width: 100%;
+	} 
+#slider-box/*no borrar es la caja total de las imgs*/ {
+	    height: 100%;
+	    width: 300%;} 
+.element-1{background: url("../images/slider1.jpg") no-repeat 30% 60%; 	}
+.element-2{background: url("../images/slider2.jpg") no-repeat center;	}
+.element-3{background: url("../images/slider1.jpg")no-repeat center; }
+.element-1,.element-2,.element-3 {
+	    min-height: 500px;
+	    max-height: 100%;
+	    width: 100%;}
+
+.slider-element /*los matiene flotando*/{
+	float: left;
+	width: 33.333%;}
+	
+#element1, #element2 , #element3{ bottom:0 ; }
+#element1{ left: 48.5%; }
+#element2{ left: 50%; }
+#element3{ left: 51.5%; }
+/*margenes no borrar necesario*/
+#element1:checked ~ #slider-container #slider-box {
+	margin-left: 0;}
+#element2:checked ~ #slider-container #slider-box {
+	margin-left: -100%;	}
+#element3:checked ~ #slider-container #slider-box {
+	margin-left: -200%;	} /*margenes no borrar necesario*/
+#slider-box /*animacion*/{
+	-webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease;
+	-ms-transition: all 0.75s ease;
+	-o-transition: all 0.75s ease;
+	transition: all 0.75s ease;} 
+/*fin de imagen principal*/
+// linea mas menu
+.foto{ 
+	a{padding:3%; color:$negro;text-decoration: none;font-size: 15px;font-weight: bold;}
+	a:hover{color:$plomo;} 
+	hr{background:#848484;width:100%;height:2px;}
+	i{font-size:18px;}
+}
+.estrellas{
+	i{font-size:20px;}
+}
+.auspiciadores{
+	background:url("../images/client-bg.jpg") no-repeat;
+}
+.productos{
+	img{width:100px;height:80px;}
+}
+.uno{background:$plomo;}
+.dos{background:$negro;}

@@ -1,0 +1,121 @@
+/*Global*/
+*{
+	font-family: "OpenSans-Light" Helvetica;
+}
+
+@font-face{
+	font-family: OpenSans-Regular;
+	src: url(../fonts/Open/OpenSans-Regular.ttf);
+}
+@font-face{
+	font-family: OpenSans-Light;
+	src: url(../fonts/Open/OpenSans-Light.ttf);
+}
+@font-face{
+	font-family: OpenSans-Bold;
+	src: url(../fonts/Open/OpenSans-Bold.ttf);
+}
+
+.text-peq-gris{ font-family: OpenSans-Ligth; font-size: 13px; }
+.mg-tyb-5{ margin: 5% auto; }
+.pt-3{padding-top: 3%;}
+.pb-3{padding-bottom: 3%;}
+.color-hueso{ color: #C4C6C3; }
+.color-plomo{ color: #666; }
+.pd-r-2{ padding-right: 2%; }
+.pd-r-0{ padding-right: 0; }
+.pd-l-0{ padding-left: 0; }
+.mg-3{ margin: 3%; }
+.mgt-1{ margin-top: 1%; }
+.rojo{color: red;}
+.pd-0 {
+	padding: 0;
+}
+.pd-2 {
+	padding: 2%;
+}
+.pt-1 {
+	padding-top: 1%;
+}
+.pb-1 {
+	padding-bottom: 1%;}
+.pt-5 {
+	padding-top: 5%;
+}
+.pb-5 {
+	padding-bottom: 5%;}
+.pt-10 {
+	padding-top: 10%;
+}
+.pb-3{
+	padding-bottom: 3%;
+}
+.pd-5 {
+	padding: 5%;
+}
+.pd-5-10{
+	padding: 5% 10%;
+}
+.mg-0{
+	margin: 0;
+}
+.w-100{
+	width: 100%;
+}
+.lh{
+	line-height: 1.5;
+}
+.text-bold{
+	font-weight: bold;
+}
+.text-center{
+	text-align: center;
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.text-white{
+	color: white;
+}
+.text-gray{
+	color: rgb(83, 88, 95);
+}
+
+.text-blue{
+ color: #192951;
+}
+.a-none-decoration{
+	text-decoration: none;
+}
+.bg-gray{
+	background-color: #F2F2F2;
+}
+.bg-green{
+	background-color: #5E8039;
+}
+.bg-black{
+	background-color: #4D4D4D;
+}
+.text-gray{
+	color:#F2F2F2;
+}
+.text-black{
+	color: #4D4D4D;
+}
+.text-green{
+	color: #5E8039;
+}
+.text-white{
+	color:#fff;
+}
+.text-yellow{
+	color: #fac60e;
+}
+.bg-img-block{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
